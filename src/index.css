@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-red: #E2231A;
+    --color-brand-black: #1C1C1C;
+    --color-brand-yellow: #FFD600;
+    --color-brand-green: #00A859;
+    --color-brand-blue: #3FA9F5;
+
+    --font-headline: "M PLUS Rounded 1c", sans-serif;
+    --font-body: "Inter Tight", sans-serif;
+    --font-local: "Baloo 2", cursive;
+}

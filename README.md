@@ -1,16 +1,78 @@
-# React + Vite
+# 🇮🇳 ETHMumbai Maxi Checker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The official **ETHMumbai Community Hub**.  
+A gamified platform to check your "Mumbai Ethereum Maxi" status, verify your on-chain/social activity, and generate a custom "Bus Pass" ticket.
 
-Currently, two official plugins are available:
+![ETHMumbai Hero](public/assets/bus-layer.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+-   **Parallax Hero Section**: A stunning, interactive landing page with moving clouds, city skyline, and the iconic BEST Bus.
+-   **Maxi Checker**: Connect your wallet and verify your X (Twitter) handle to calculate your "Maxi Score".
+-   **Leaderboard**: Compete with other community members for the top rank (Giga Maxi, Verified Degen, etc.).
+-   **Dynamic Ticket Generation**: Generate a shareable, custom ticket with your rank and score.
+-   **3D Visuals**: Floating 3D ETH tokens and high-quality assets.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+-   **Frontend**: React, Vite, Tailwind CSS
+-   **Backend**: Node.js, Express
+-   **APIs**: Twitter API v2 (for score calculation)
+-   **deployment**: Vercel (Frontend) + Render (Backend)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+### Prerequisites
+-   Node.js (v18+)
+-   X (Twitter) Developer Account (for API Key)
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/lohit-40/ethmumbai.git
+    cd ethmumbai
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure Environment**
+    Create a `.env` file in the root directory:
+    ```env
+    # Backend
+    PORT=3000
+    X_BEARER_TOKEN=your_twitter_api_bearer_token
+    
+    # Frontend (Vite)
+    VITE_API_URL=http://localhost:3000
+    ```
+
+4.  **Run Locally**
+    You need two terminals:
+
+    *   **Terminal 1 (Backend)**:
+        ```bash
+        npm run server
+        ```
+    *   **Terminal 2 (Frontend)**:
+        ```bash
+        npm run dev
+        ```
+
+    Visit `http://localhost:5173` to ride the bus! 🚌
+
+## 🌐 Deployment
+
+-   **Frontend**: Deployed on [Vercel](https://vercel.com). Set `VITE_API_URL` to your backend URL.
+-   **Backend**: Deployed on [Render](https://render.com). Set `X_BEARER_TOKEN` in environment variables.
+
+## 🤝 Contributing
+
+Built with ❤️ for the ETHMumbai community.
+Pull requests are welcome!
+
+---
+*Code is Law, but Chai is Fuel.* ☕

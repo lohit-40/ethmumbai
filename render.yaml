@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: eth-maxi-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm run server
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: X_BEARER_TOKEN
+        sync: false # User must enter this manually in dashboard for security
